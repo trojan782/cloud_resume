@@ -36,7 +36,7 @@ jobs:
       run : terraform validate -no-color
 
     - name: Terraform Plan
-      run: terraform plan -no-color
+      run: terraform plan -no-color -lock=false
       
     - name: Terraform Apply
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
