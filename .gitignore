@@ -1,0 +1,27 @@
+*.env
+
+**/builds/*
+**/builds/** 
+# Virtual Environment
+venv/
+ENV/
+env/
+
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraformrc
+terraform.rc
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# OS generated files
+.DS_Store
+.DS_Store?
